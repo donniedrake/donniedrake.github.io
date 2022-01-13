@@ -1,0 +1,224 @@
+@charset "UTF-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+html {
+  font-size: 100%;
+}
+/*universal reset*/
+* {
+  margin: 0px;
+  padding: 0px;
+}
+/*strips the bullet points off the list*/
+ul {
+  list-style-type: none;
+}
+/*flexbox for layout*/
+.row {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: auto;
+  flex-direction: column;
+}
+/*the star of the show*/
+.item {
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: 0.75rem;
+}
+/*mobile first*/
+.current {
+  background: #f2f2f2;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; /*for demo purposes, restyle as you see fit*/
+}
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+.intro { /*for demo purposes, restyle as you see fit*/
+  font-size: 1.25rem;
+  max-width: 600px;
+}
+/*drop cap*/
+p.intro:first-letter { /*for demo purposes, restyle as you see fit*/
+  color: #903;
+  float: left;
+  font-family: Georgia;
+  font-size: 4rem;
+  line-height: 60px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+}
+/*for demo purposes, restyle as you see fit*/
+blockquote {
+  font-style: italic;
+  font-size: 2rem;
+  border-left: 4px solid #903;
+  padding-left: 10px;
+}
+/*DO NOT CHANGE ANYTHING IN THE HEADER*/
+header {
+  background-image: url("../img/header-background.png");
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  border-bottom: thin solid #333;
+}
+#logo, #logo_white {
+  max-width: 200px;
+  margin: auto;
+  padding: 20px;
+}
+header > nav {
+  border-top: 8px solid black;
+  background: white;
+}
+nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: auto;
+}
+nav li {
+  width: 100%;
+  border-right: 1px solid #333;
+}
+nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: .75rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  height: 40px;
+  display: block;
+  line-height: 40px;
+  text-align: center;
+  border-top: 8px solid black;
+  margin-top: -8px;
+}
+nav a:hover {
+  border-top: 8px solid #EB4A18;
+}
+/*END HEADER*/
+/*the nav with links to the othr projects*/
+/*for demo purposes, restyle as you see fit*/
+.global {
+  display: flex;
+  flex-wrap: wrap;
+}
+.global li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  outline: thin blue solid;
+}
+/*DO NOT CHANGE ANYTHING IN THE FOOTER*/
+footer {
+  background: #2C2029;
+  color: #8E828B;
+  font-family: 'Lato', sans-serif;
+  padding-bottom: 30px;
+}
+.address {
+  margin-top: 30px;
+  width: 70%;
+  font-size: .75rem;
+  margin: auto;
+}
+#social {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  width: 70%;
+  margin: auto;
+}
+#lower ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 70%;
+  align-items: center;
+  margin: auto;
+  border-top: thin solid #8E828B;
+  padding-top: 20px;
+}
+#lower a {
+  color: #8E828B;
+  font-family: 'Lato', sans-serif;
+  text-decoration: none;
+  font-size: .75rem;
+}
+/*larger screens*/
+@media screen and (min-width:700px) {
+  html {
+    font-size: 125%;
+  }
+  /*FLEXBOX FOR LAYOUT*/
+  .row {
+    display: flex;
+    width: 100%;
+    max-width: 1280px;
+    padding: .75rem;
+    justify-content: space-between;
+    margin: auto;
+    margin-bottom: 1rem;
+    flex-direction: row;
+  }
+  /*header*/
+  #logo, #logo_white {
+    max-width: 200px;
+    margin: auto;
+    padding: 2rem;
+  }
+  header > nav {
+    border-top: 8px solid black;
+    background: white;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: auto;
+  }
+  nav li:first-child {
+    border-left: 1px solid #333;
+  }
+  nav li {
+    width: 20%;
+    border-right: 1px solid #333;
+  }
+  /*footer*/
+  #social {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 35px;
+  }
+  #lower ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
+    border-top: thin solid #8E828B;
+    padding-top: 20px;
+  }
+}
