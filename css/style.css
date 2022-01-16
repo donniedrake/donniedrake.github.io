@@ -24,6 +24,13 @@ ul {
   margin: auto;
   flex-direction: column;
 }
+.hero {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: auto;
+  flex-direction: column;
+}
 /*the star of the show*/
 .item {
   justify-content: flex-start;
@@ -34,6 +41,7 @@ ul {
   flex-shrink: 1;
   padding: 0.75rem;
 }
+
 
 /*mobile first*/
 /* .current {
@@ -224,6 +232,32 @@ footer {
     margin: auto;
     margin-bottom: 1rem;
     flex-direction: row;
+  }
+  .hero {
+    display: flex;
+    width: 100%;
+    /* max-width: 1280px; */
+    /* padding: .75rem; */
+    justify-content: space-between;
+    /* margin: auto; */
+    margin-bottom: 1rem;
+
+  }
+  .share {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+  }
+  .sharelinks {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    float: left;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
   }
   /*header*/
   #logo, #logo_white {
