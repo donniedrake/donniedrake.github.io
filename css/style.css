@@ -1,6 +1,8 @@
 @charset "UTF-8";
 /* CSS Document */
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Montserrat:wght@400;700&display=swap');
+
 html {
   font-size: 100%;
 }
@@ -41,17 +43,37 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center; }/*for demo purposes, restyle as you see fit*/
- */
+ 
 
-h1 {
-  font-size: 2rem;
-}
-h2 {
-  font-size: 1.5rem;
-}
-h3 {
-  font-size: 1.25rem;
-}
+  body {
+    font-family: 'Cabin', sans-serif;
+    font-weight: 400;
+    line-height: 1.75;
+  }
+  
+  p {margin-bottom: 1rem;}
+  
+  h1, h2, h3, h4, h5 {
+    margin: 3rem 0 1.38rem;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.3;
+  }
+  
+  h1 {
+    margin-top: 0;
+    font-size: 3.052rem;
+  }
+  
+  h2 {font-size: 2.441rem; font-weight:400}
+  
+  h3 {font-size: 1.953rem;}
+  
+  h4 {font-size: 1.563rem;}
+  
+  h5 {font-size: 1.25rem;}
+  
+  small, .text_small {font-size: 0.8rem;}
+
 .intro { /*for demo purposes, restyle as you see fit*/
   font-size: 1.25rem;
   /* max-width: 600px; */
@@ -60,7 +82,7 @@ h3 {
 p.intro:first-letter { /*for demo purposes, restyle as you see fit*/
   color: #903;
   float: left;
-  font-family: Georgia;
+  font-family: 'Cabin', sans-serif;
   font-size: 4rem;
   line-height: 60px;
   padding-top: 4px;
@@ -70,7 +92,7 @@ p.intro:first-letter { /*for demo purposes, restyle as you see fit*/
 /*for demo purposes, restyle as you see fit*/
 blockquote {
   font-style: italic;
-  font-size: 2rem;
+  font-size: 1.5rem;
   border-left: 4px solid #903;
   padding-left: 10px;
 }
@@ -122,72 +144,31 @@ nav a:hover {
 
 
 
-
-/*the nav with links to the othr projects*/
+/*the nav with links to the other projects*/
 /*for demo purposes, restyle as you see fit*/
+
+@media screen and (max-width:700px) {
 .global {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-}
-.global li {
-  width: 65px;
-  height: 65px;
-  margin: 10px 10px 100px 10px;
-  display: inline-block;
-  background-size: cover;
-  position: relative;
-  cursor: pointer;
-  transition: all 0.4s ease-out;
-  box-shadow: 0px 35px 77px -17px rgba(0, 0, 0, 0.44);
-  border-radius: 50px;
+  align-items: space-around;
+  justify-content: center;
 }
 .global img {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 0;
-  transition: all 0.4s ease-out;
-  border-radius: 50px;
+  display: none;
 }
-.current img {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 0;
-  transition: all 0.4s ease-out;
-  border-radius: 16px;
+.global li {
+  width: 20%;
+  margin: 5px;
+  text-align: center;
 }
-.animate-text {
-  opacity: 1;
-  transition: none;
-}
-.global li:hover img {
-  border-radius: 8px;
-}
-.global li:hover {
-  box-shadow: 0px 35px 77px -17px rgba(0, 0, 0, 0.64);
-  transform: scale(2);
-  margin: 50px 50px 80px 50px;
-}
-.global h2 {
-  padding-top: 45px;
-  font-size: 10px;
-  margin: 20px 0 0 0;
-  transform: translateX(100px);
-  color: #1c1e22;
-  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
-}
-.global li:hover .animate-text {
-  transform: translateX(0);
-  opacity: 1;
+
 }
 
 
+
+/* End mobile query */
 
 /*DO NOT CHANGE ANYTHING IN THE FOOTER*/
 footer {
@@ -225,11 +206,14 @@ footer {
   text-decoration: none;
   font-size: .75rem;
 }
+
+
 /*larger screens*/
 @media screen and (min-width:700px) {
   html {
     font-size: 125%;
   }
+
   /*FLEXBOX FOR LAYOUT*/
   .row {
     display: flex;
@@ -265,17 +249,113 @@ footer {
     width: 20%;
     border-right: 1px solid #333;
   }
+
+
 /* bottom nav for desktop */
-  .global {
+  /* .global {
     width: 100%;
+    max-width: 800px;
     align-items: space-around;
     justify-content: center;
-    max-width: 800px;
+    
+  } */
+
+  .global {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    /* max-width: 800px; */
+    align-items: space-around;
+    justify-content: center;
+    
+  }
+  .global li {
+    width: 65px;
+    height: 65px;
+    margin: 10px 10px 100px 10px;
+    display: inline-block;
+    /* background-size: cover; */
+    position: relative;
+    cursor: pointer;
+    transition: all 0.4s ease-out;
+    /* box-shadow: 0px 35px 77px -17px rgba(0, 0, 0, 0.44); */
+    border-radius: 50px;
+  }
+  .global img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all 0.4s ease-out;
+    box-shadow: 0px 35px 77px -17px rgba(0, 0, 0, 0.44);
+    border-radius: 50px;
+  }
+  .current img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all 0.4s ease-out;
+    border-radius: 16px;
   }
   .animate-text {
     opacity: 0;
     transition: all 0.6s ease-in-out;
   }
+  .global li:hover img {
+    border-radius: 8px;
+  }
+  .global li:hover {
+    box-shadow: 0px 35px 77px -17px rgba(0, 0, 0, 0.64);
+    transform: scale(2);
+    margin: 50px 50px 80px 50px;
+  }
+  .global h5 {
+    padding-top: 45px;
+    font-size: 10px;
+    margin: 20px 0 0 0;
+    transform: translateX(100px);
+    color: #1c1e22;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+  }
+  .global li:hover .animate-text {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   /*footer*/
   #social {
