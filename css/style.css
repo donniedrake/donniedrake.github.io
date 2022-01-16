@@ -251,21 +251,13 @@ footer {
   }
 
 
-/* bottom nav for desktop */
-  /* .global {
-    width: 100%;
-    max-width: 800px;
-    align-items: space-around;
-    justify-content: center;
-    
-  } */
+/* New Bottom nav for desktop */
 
   .global {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    /* max-width: 800px; */
     align-items: space-around;
     justify-content: center;
     
@@ -275,11 +267,9 @@ footer {
     height: 65px;
     margin: 10px 10px 100px 10px;
     display: inline-block;
-    /* background-size: cover; */
     position: relative;
     cursor: pointer;
     transition: all 0.4s ease-out;
-    /* box-shadow: 0px 35px 77px -17px rgba(0, 0, 0, 0.44); */
     border-radius: 50px;
   }
   .global img {
