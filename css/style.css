@@ -178,11 +178,33 @@ p.intro:first-letter { /*for demo purposes, restyle as you see fit*/
   padding-left: 3px;
 }
 /*for demo purposes, restyle as you see fit*/
+#blockquote-item {
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: 0.75rem;
+  background: none;
+  position: relative;
+  border: none;
+  min-height: 150px;
+}
 blockquote {
   font-style: italic;
-  font-size: 1.5rem;
-  border-left: 4px solid #903;
-  padding-left: 10px;
+  font-size: 1rem;
+  /* border-left: 4px solid #903; */
+  padding-left: 50px;
+  z-index: 1;
+}
+.yellow-circle {
+  background-color: #FDC334;
+  border-radius: 100px;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  z-index: 0;
 }
 /*DO NOT CHANGE ANYTHING IN THE HEADER*/
 header {
