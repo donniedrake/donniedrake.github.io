@@ -78,7 +78,15 @@ figure {
     color:#333;
     transition: all .5s ease-in-out;
 }
-#upper a:hover {filter:saturate(2);}
+#upper a:hover {
+text-shadow: 13px 13px 0px #E2BD17;
+  -moz-transform: scale(0.9);
+-webkit-transform: scale(0.9);
+-o-transform: scale(0.9);
+-ms-transform: scale(0.9);
+transform: scale(0.9);
+}
+
 #upper img {border-radius:50%;
   width:100%;max-width:100%; height:auto;}
 
@@ -107,37 +115,38 @@ figure {
   display: flex;
   align-items: center;
   justify-content: center; }/*for demo purposes, restyle as you see fit*/
- 
+
 
   body {
     font-family: 'Cabin', sans-serif;
     font-weight: 400;
     line-height: 1.75;
   }
-  
+
   p {margin-bottom: 1rem;}
-  
+
   h1, h2, h3, h4, h5 {
     margin: 3rem 0 1.38rem;
     font-family: 'Montserrat', sans-serif;
     line-height: 1.3;
   }
-  
+
   h1 {
-    margin-top: 0;
-    font-size: 3rem;
+    margin-top: 10;
+    margin: 100;
+    font-size: 2rem;
     text-align: center;
   }
-  
+
   h2 {font-size: 2.3rem; font-weight:400}
-  
+
   h3 {font-size: 1.7rem;}
-  
+
   h4 {font-size: 1.563rem;}
-  
+
   h5 {font-size: 1.25rem;
   text-align: center;}
-  
+
   small, .text_small {font-size: 0.8rem;}
 
 .intro { /*for demo purposes, restyle as you see fit*/
@@ -207,7 +216,9 @@ nav a:hover {
   border-top: 8px solid #EB4A18;
 }
 /*END HEADER*/
-
+.profile {
+  border-radius: 200px;
+}
 
 
 /*the nav with links to the other projects*/
@@ -295,7 +306,7 @@ footer {
   .hero {
     display: flex;
     width: 100%;
-    max-width: 800px;
+    height: auto;
     padding: .75rem;
     justify-content: space-between;
     margin: auto;
@@ -338,7 +349,7 @@ footer {
     flex-wrap: wrap;
     align-items: space-around;
     justify-content: center;
-    
+
   }
   .global li {
     width: 65px;
