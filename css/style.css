@@ -5,6 +5,7 @@
 
 html {
   font-size: 100%;
+  background-color: #fbf7f4;
 }
 
 /*universal reset*/
@@ -23,6 +24,10 @@ ul {
   justify-content: space-between;
   margin: auto;
   flex-direction: column;
+}]
+.row img {
+  max-width: 100;
+
 }
 figure {
   display: flex;
@@ -242,6 +247,9 @@ nav a:hover {
   margin: 5px;
   text-align: center;
 }
+h5 {
+  font-size: .75rem;
+}
 
 }
 
@@ -316,7 +324,7 @@ footer {
     background-image: url("../img/hero.jpg");
     background-size: cover;
     min-height: 600px;
-    width: 100%
+    width: 100%;
     display: flex;
     flex-direction: column;
     border-bottom: thin solid #333;
