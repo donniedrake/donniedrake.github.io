@@ -5,6 +5,7 @@
 
 html {
   font-size: 100%;
+  background-color: #fbf7f4;
 }
 
 /*universal reset*/
@@ -23,6 +24,11 @@ ul {
   justify-content: space-between;
   margin: auto;
   flex-direction: column;
+}]
+.row img {
+  max-width: 100%;
+  height: auto;
+
 }
 figure {
   display: flex;
@@ -32,12 +38,14 @@ figure {
   flex-direction: column;
 }
 .hero {
+  background-image: url("../img/hero.jpg");
+  background-size: cover;
+  min-height: 300px;
   display: flex;
-  width: 100%;
-  justify-content: space-between;
-  margin: auto;
-  padding-bottom: 1rem;
   flex-direction: column;
+  border-bottom: thin solid #333;
+  margin-bottom: 1rem;
+  
 }
 /*the star of the show*/
 .item {
@@ -217,7 +225,7 @@ nav a:hover {
 }
 /*END HEADER*/
 .profile {
-  border-radius: 200px;
+  border-radius: 400px;
 }
 
 
@@ -239,6 +247,9 @@ nav a:hover {
   width: 20%;
   margin: 5px;
   text-align: center;
+}
+h5 {
+  font-size: .75rem;
 }
 
 }
@@ -304,14 +315,21 @@ footer {
     flex-direction: row;
   }
   .hero {
-    display: flex;
+    /* display: flex;
     width: 100%;
     height: auto;
     padding: .75rem;
     justify-content: space-between;
     margin: auto;
+    margin-bottom: 1rem; */
+    background-image: url("../img/hero.jpg");
+    background-size: cover;
+    min-height: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-bottom: thin solid #333;
     margin-bottom: 1rem;
-
   }
 
   /*header*/
