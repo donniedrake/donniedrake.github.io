@@ -24,7 +24,7 @@ ul {
   justify-content: space-between;
   margin: auto;
   flex-direction: column;
-}]
+}
 .row img {
   max-width: 100%;
   height: auto;
@@ -278,7 +278,7 @@ nav a:hover {
 }
 .global li {
   width: 20%;
-  margin: .5;
+  margin: .5rem;
   text-align: center;
 }
 .global a {
