@@ -34,7 +34,7 @@ figure {
   display: flex;
   width: 100%;
   height: auto;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   margin: auto;
   flex-direction: column;
 }
@@ -57,6 +57,10 @@ figure {
   flex-grow: 1;
   flex-shrink: 1;
   padding: 0.75rem;
+}
+.item img {
+  max-width: 100%;
+  height: auto;
 }
 #upper {
   display: flex;
@@ -420,8 +424,7 @@ footer {
     opacity: 1;
   }
 
-
-  h5 {font-size: 1.25rem;
+  h5 {font-size: .75rem;
     text-align: center;}
 
 
