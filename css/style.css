@@ -26,9 +26,8 @@ ul {
   flex-direction: column;
 }
 .item img {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
+  height: 100%;
+  width: auto;
 }
 figure {
   display: flex;
