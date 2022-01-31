@@ -25,9 +25,10 @@ ul {
   margin: auto;
   flex-direction: column;
 }
-.item img {
-  height: 100%;
-  width: auto;
+figure img {
+  width: 100%;
+  max-width: fit-content;
+  height:fit-content;
 }
 figure {
   display: flex;
