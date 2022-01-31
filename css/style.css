@@ -25,7 +25,11 @@ ul {
   margin: auto;
   flex-direction: column;
 }
-
+.item img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
 figure {
   display: flex;
   width: 100%;
@@ -34,7 +38,7 @@ figure {
   margin: auto;
   flex-direction: column;
 }
-.hero {
+/* .hero {
   background-image: url("../img/hero.jpg");
   background-size: cover;
   min-height: 300px;
@@ -43,7 +47,7 @@ figure {
   border-bottom: thin solid #333;
   margin-bottom: 1rem;
   
-}
+} */
 /*the star of the show*/
 .item {
   justify-content: flex-start;
