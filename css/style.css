@@ -25,11 +25,7 @@ ul {
   margin: auto;
   flex-direction: column;
 }
-.row img {
-  max-width: 100%;
-  height: auto;
 
-}
 figure {
   display: flex;
   width: 100%;
@@ -163,7 +159,7 @@ transform: scale(0.9);
 
   h4 {font-size: 1.563rem;}
 
-  h5 {font-size: 1.25rem;
+  h5 {font-size: .75rem;
   text-align: center;}
 
   small, .text_small {font-size: 0.8rem;}
@@ -259,6 +255,8 @@ nav a:hover {
 /*END HEADER*/
 .profile {
   border-radius: 400px;
+  height: 100%;
+  width:auto
 }
 
 
@@ -285,7 +283,6 @@ nav a:hover {
   color: black;
 }
 h5 {
-  /* font-size: .75rem; */
   text-decoration: none;
   text-transform: uppercase;
   font-size: .75rem;
@@ -466,36 +463,6 @@ footer {
     transform: translateX(0);
     opacity: 1;
   }
-
-  h5 {font-size: .75rem;
-    text-align: center;}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
