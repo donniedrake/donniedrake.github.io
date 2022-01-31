@@ -25,11 +25,7 @@ ul {
   margin: auto;
   flex-direction: column;
 }
-figure img {
-  width: 100%;
-  max-width: fit-content;
-  height:fit-content;
-}
+
 figure {
   display: flex;
   width: 100%;
@@ -37,6 +33,8 @@ figure {
   /* justify-content: space-between; */
   margin: auto;
   flex-direction: column;
+  max-width: fit-content;
+  height:fit-content;
 }
 /* .hero {
   background-image: url("../img/hero.jpg");
